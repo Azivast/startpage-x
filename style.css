@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #c3ccd3;
+    color: white;
+    overflow: hidden;
+}
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow:auto ;
+}
+.deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%
+}
+.card {
+  width: 180px;
+  height: 180px;
+  background-color: #121b24;
+  box-shadow:
+    0 0 0 8px #121b24,
+    0 0 0 13px #162635,
+    0 0 0 23px #121b24;
+  margin: 2em;
+  overflow: hidden;
+}
+.card-inner{
+    font-size: 17px;
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+.card-music {
+  width: 424px;
+}
+.center-text {
+  text-align: center;
+  margin-top: 30px !important;
+  height: auto;
+}
+
+#title {
+    font-size: 30px;
+    margin: 2vh;
+    color: #162635;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+a:before {
+    color: #F7ABA9;
+    content: "┢   ";
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #F7ABA9;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
