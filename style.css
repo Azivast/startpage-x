@@ -45,7 +45,7 @@ body {
 
 .card-title:before {
     color: #F7ABA9;
-    content: "░ ";
+    content: ":: ";
 }
 
 #entry:before {
