@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #c3ccd3;
+    background: #222222;
     color: white;
     overflow: hidden;
 }
@@ -19,16 +19,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 100%
 }
 .card {
   width: 180px;
-  height: 180px;
-  background-color: #121b24;
-  box-shadow:
-    0 0 0 8px #121b24,
-    0 0 0 13px #162635,
-    0 0 0 23px #121b24;
+  height: 230px;
   margin: 2em;
   overflow: hidden;
 }
@@ -48,10 +42,19 @@ body {
   height: auto;
 }
 
-#title {
-    font-size: 30px;
-    margin: 2vh;
-    color: #162635;
+
+.card-title:before {
+    color: #F7ABA9;
+    content: "░ ";
+}
+
+#entry:before {
+    color: #F7ABA9;
+    content: "┣   ";
+}
+#last:before {
+    color: #F7ABA9;
+    content: "┗   ";
 }
 
 a:link {
@@ -59,10 +62,6 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 
-}
-a:before {
-    color: #F7ABA9;
-    content: "┢   ";
 }
 a:visited {
     color: white;
@@ -73,6 +72,10 @@ a:hover {
     color: #F7ABA9;
     background-color: transparent;
     text-decoration: none;
+    font-style: italic;
+}
+a:hover:before {
+    font-style: normal;
 }
 a:active {
     color: white;
