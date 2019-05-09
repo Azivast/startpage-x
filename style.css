@@ -88,9 +88,9 @@ input {
   background-color: #222222;
   color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
+    font-family: 'Share Tech Mono', monospace;
 }
 ::placeholder {
   color: white;
   opacity: 1;
-  font-family: 'Share Tech Mono', monospace;
 }
