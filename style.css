@@ -21,6 +21,7 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap; 
+  width: 100%;
 }
 .card {
   width: 180px;
@@ -29,7 +30,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
 }
 .card-inner{
     font-size: 17px;
@@ -54,6 +55,14 @@ body {
 }
 #search {
     margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+}
+#searchbar {
+    width: 80%;
+    max-width: 520px;
+    min-width: 180px;
 }
 
 a:link {
@@ -89,7 +98,7 @@ input {
   background-color: #222222;
   color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
-    font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 ::placeholder {
   color: white;
