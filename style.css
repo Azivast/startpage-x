@@ -1,10 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #222222;
+    background-image: url("background.jpg");
     color: white;
     overflow: shown;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'PT Mono', monospace;
+    font-weight: bold;
 }
 .table {
   display: flex;
@@ -24,34 +25,47 @@ body {
   width: 100%;
 }
 .card {
-  width: 180px;
+  background: #000000d9;
+  width: 220px;
   height: 240px;
   margin: 1em;
-  padding-left: 20px;
-  padding-right: 20px;
+  border: 1px #000000;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
+  transition: transform .2s; /* Animation time */
 }
+.card:hover {
+  transform: scale(1.1);
+  }
 .card-inner{
-    font-size: 17px;
+    background: #0F0F0F;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 0px;
+    height:100%;
 }
 .card-title{
-    font-size: 20px;
-    margin-bottom: 1em;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .card-title:before {
     color: #F7ABA9;
-    content: ":: ";
+    content: "";
 }
 
 #entry:before {
     color: #F7ABA9;
-    content: "┣   ";
+    content: "#   ";
 }
 #last:before {
     color: #F7ABA9;
-    content: "┗   ";
+    content: "#   ";
 }
 #search {
     margin-bottom: 100px;
@@ -63,6 +77,10 @@ body {
     width: 80%;
     max-width: 520px;
     min-width: 180px;
+    transition: transform .2s; /* Animation time */
+}
+#searchbar:hover {
+    transform: scale(1.1);
 }
 
 a:link {
@@ -95,10 +113,11 @@ input {
   margin-top: 10px;
   padding: 12px 20px;
   border: none;
-  background-color: #222222;
+  background-color: #000000d9;
   color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.33);
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'PT Mono', monospace;
+  font-weight: bold;
 }
 ::placeholder {
   color: white;
