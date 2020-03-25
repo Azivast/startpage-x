@@ -3,14 +3,16 @@ html{
     }
 body {
     --font-size: 13px;
-    --color-text: white; 
-    --color-bg: #20232b;
-    --color-card-bg: #151a20; 
-    --color-card-shadow: #101114AA;
+    --color-text: #ffffff; 
+    --color-highlight: #b7fff9;
+    --color-bg: #171717;
+    --color-card-bg: #131313; 
+    --color-card-shadow: #000000AA;
     
     
     margin: 0px;
-    background-image: linear-gradient(var(--color-bg), pink); 
+    /* background-image: linear-gradient(var(--color-bg), pink); */
+    background-color: var(--color-bg) ;
     background-size: cover;
     color: var(--color-text);
     overflow: visible;
@@ -105,7 +107,7 @@ a:visited {
 }
 a:hover {
     color: var(--color-card-bg);
-    background-color: var(--color-text);
+    background-color: var(--color-highlight);
     text-decoration: none;
 }
 a:focus {
