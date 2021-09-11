@@ -4,10 +4,12 @@ html{
 body {
     --font-size: 13px;
     --color-text: #ffffff; 
-    --color-highlight: #b7fff9;
+    --color-highlight: #ffc5c4; /* Old highlight: #b7fff9 */
     --color-bg: #171717;
+    --color-card-fg: #313131;
     --color-card-bg: #131313; 
     --color-card-shadow: #000000AA;
+
     
     
     margin: 0px;
@@ -34,10 +36,12 @@ body {
 
 .card {
     margin: 20px;
+    width: 220px;
+    height: 250px;
     background: var(--color-card-bg);
-    border-width: 5px 0px 10px 0px;
+    border-width: 4px 4px 20px 4px;
     border-style: solid;
-    border-color: var(--color-card-bg);
+    border-color: var(--color-card-fg);
     box-shadow: 20px 20px 0px var(--color-card-shadow);
     transition: transform .2s;
     
@@ -48,35 +52,45 @@ body {
 
 
 .card-inner {
-    background: var(--color-card-bg);
-    width: 190px;
-    height: 230px;
     margin: 5px;
     transition: transform .2s;
-    border: 1px solid var(--color-text);
+    /* border: 1px solid var(--color-text); */
     font-size: var(--font-size);
     padding: 10px;
-    padding-top: 0px;
-    
+    padding-top: 5px;
 }
 
 .card-title{
     position: relative;
-    top: -9px;
+    /* top: -9px; */
     font-size: var(--font-size);
     margin: 0px;
-    text-align: center;
+    margin-bottom: 9px;
+    text-align: left;
+    font-weight:bold;
+    font-style: italic;
     width: auto;
-    
 }
 .card-title span{
     background: var(--color-card-bg);
 }
 .card-title span:before{
-    content: " ";
+    content: "[ ";
 }
 .card-title span:after{
-    content: " ";
+    content: " ]";
+}
+
+.joker {
+    background-image: url("https://anime-girls-holding-programming-books.netlify.app/static/Murakami_Shiina_Holding_Computer_C_Programming_Language-de50ab96ebd3bb4272f73d4d053f50eb.png");
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: #ffc5c4;
+}
+
+.no-border {
+    border: none;
 }
 
 #search {
