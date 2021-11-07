@@ -4,7 +4,7 @@ html{
 body {
     --font-size: 13px;
     --color-text: #ffffff; 
-    --color-highlight: #ffc5c4; /* Old highlight: #b7fff9 */
+    --color-highlight: #ffc5c4; /* #daa44f is nice too*/
     --color-bg: #171717;
     --color-card-fg: #313131;
     --color-card-bg: #131313; 
